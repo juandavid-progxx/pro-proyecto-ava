@@ -1,95 +1,272 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.Separator?>
-<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.TilePane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="477.0" prefWidth="670.0" style="-fx-background-color: #466aa3;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.edu.co.couniquindioeduco.controller.clienteController">
+<AnchorPane prefHeight="595.0" prefWidth="797.0" style="-fx-background-color: #0c1d38;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.edu.co.couniquindioeduco.controller.clienteController">
    <children>
-      <SplitPane dividerPositions="0.48151260504201676" orientation="VERTICAL" prefHeight="477.0" prefWidth="670.0">
-        <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="227.0" prefWidth="669.0" style="-fx-background-color: #48397d;">
+      <AnchorPane layoutX="58.0" layoutY="29.0">
+         <children>
+            <Pane>
                <children>
-                  <Button fx:id="btnagregarCliente" layoutX="512.0" layoutY="179.0" mnemonicParsing="false" onAction="#onagregarCliente" prefHeight="31.0" prefWidth="136.0" text="Agregar cliente">
-                     <font>
-                        <Font name="System Bold" size="15.0" />
-                     </font></Button>
-                  <Label layoutX="14.0" layoutY="102.0" text="nombre" textFill="#000000f5">
-                     <font>
-                        <Font name="System Bold" size="15.0" />
-                     </font></Label>
-                  <TextField fx:id="txtnombre" layoutX="80.0" layoutY="100.0" />
-                  <Label layoutX="24.0" layoutY="142.0" text="edad">
-                     <font>
-                        <Font name="System Bold" size="15.0" />
-                     </font></Label>
-                  <Label layoutX="18.0" layoutY="184.0" text="celular">
-                     <font>
-                        <Font name="System Bold" size="15.0" />
-                     </font></Label>
-                  <Label layoutX="251.0" layoutY="142.0" text="cedula">
-                     <font>
-                        <Font name="System Bold" size="15.0" />
-                     </font></Label>
-                  <Label layoutX="244.0" layoutY="184.0" text="telefono">
-                     <font>
-                        <Font name="System Bold" size="15.0" />
-                     </font></Label>
-                  <Label layoutX="246.0" layoutY="102.0" text="apellido">
-                     <font>
-                        <Font name="System Bold" size="15.0" />
-                     </font></Label>
-                  <TextField fx:id="txtedad" layoutX="80.0" layoutY="140.0" />
-                  <TextField fx:id="txtcelular" layoutX="80.0" layoutY="182.0" />
-                  <TextField fx:id="txtapellido" layoutX="310.0" layoutY="100.0" />
-                  <TextField fx:id="txtcedula" layoutX="310.0" layoutY="140.0" />
-                  <TextField fx:id="txttelefono" layoutX="310.0" layoutY="182.0" />
-                  <Label layoutX="181.0" layoutY="44.0" prefHeight="18.0" prefWidth="270.0" text="Gym Evolución Fitness Studio" textFill="#181818">
-                     <font>
-                        <Font name="System Bold" size="17.0" />
-                     </font>
-                  </Label>
-                  <Separator layoutX="-1.0" layoutY="59.0" prefHeight="22.0" prefWidth="670.0" />
-                  <Separator layoutY="39.0" prefHeight="6.0" prefWidth="677.0" />
-                  <ImageView fitHeight="43.0" fitWidth="655.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true" />
-                  <ImageView fitHeight="26.0" fitWidth="28.0" layoutX="10.0" layoutY="9.0">
-                     <image>
-                        <Image url="@../../../../../../../../../../../Users/JUAN%20DAVID/Desktop/icono%20user.png" />
-                     </image>
-                  </ImageView>
+                  <ButtonBar>
+                     <buttons>
+                        <TilePane minWidth="0.0" prefHeight="546.0" prefWidth="686.0">
+                           <children>
+                              <AnchorPane>
+                                 <children>
+                                    <TabPane prefHeight="546.0" prefWidth="682.0">
+                                      <tabs>
+                                        <Tab text="CLIENTE">
+                                          <content>
+                                            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="680.0" style="-fx-background-color: #0c1d38;">
+                                                   <children>
+                                                      <Label layoutX="156.0" layoutY="33.0" prefHeight="35.0" prefWidth="411.0" text="GYM EVOLUTION FINESS STUDIO" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="System Bold" size="24.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <ImageView fitHeight="26.0" fitWidth="28.0" layoutX="25.0" layoutY="38.0">
+                                                         <image>
+                                                            <Image url="@../../../../../../../../../../../Users/JUAN%20DAVID/Desktop/icono%20user.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <TextField fx:id="txtnombre" layoutX="93.0" layoutY="114.0" />
+                                                      <Label layoutX="11.0" layoutY="116.0" text="NOMBRE" textFill="#fffffff5">
+                                                         <font>
+                                                            <Font name="System Bold" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <TextField fx:id="txtapellido" layoutX="352.0" layoutY="114.0" />
+                                                      <Label layoutX="275.0" layoutY="116.0" text="APELLIDO" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="System Bold" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label layoutX="21.0" layoutY="163.0" text="EDAD" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="System Bold" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <TextField fx:id="txtedad" layoutX="93.0" layoutY="161.0" />
+                                                      <TextField fx:id="txtcedula" layoutX="352.0" layoutY="161.0" />
+                                                      <Label layoutX="273.0" layoutY="163.0" text="CEDULA" textFill="#fffcfc">
+                                                         <font>
+                                                            <Font name="System Bold" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <TextField fx:id="txttelefono" layoutX="352.0" layoutY="207.0" />
+                                                      <Label layoutX="273.0" layoutY="209.0" text="TELEFONO" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="System Bold" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <TextField fx:id="txtcelular" layoutX="93.0" layoutY="207.0" />
+                                                      <Label layoutX="15.0" layoutY="209.0" text="CELULAR" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="System Bold" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Button fx:id="btnagregarCliente" layoutX="500.0" layoutY="259.0" mnemonicParsing="false" onAction="#onagregarCliente" prefHeight="31.0" prefWidth="167.0" text="AGREGAR CLIENTE">
+                                                         <font>
+                                                            <Font name="System Bold" size="15.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Separator layoutY="291.0" prefHeight="22.0" prefWidth="704.0" />
+                                                      <Separator layoutX="-5.0" layoutY="89.0" prefHeight="7.0" prefWidth="694.0" />
+                                                      <TableView fx:id="tblClientes" layoutX="50.0" layoutY="338.0" onMouseClicked="#seleccionar" opacity="0.54" prefHeight="122.0" prefWidth="594.0">
+                                                        <columns>
+                                                          <TableColumn fx:id="colNombre" prefWidth="158.4000182747841" text="nombre" />
+                                                          <TableColumn fx:id="colApellido" prefWidth="111.20001220703125" text="apellido" />
+                                                            <TableColumn fx:id="colEdad" prefWidth="36.800048828125" text="edad" />
+                                                            <TableColumn fx:id="colCedula" prefWidth="130.39996337890625" text="cedula" />
+                                                            <TableColumn fx:id="colCelular" prefWidth="77.60003662109375" text="celular" />
+                                                            <TableColumn fx:id="colTelefono" prefWidth="95.99993896484375" text="telefono" />
+                                                        </columns>
+                                                      </TableView>
+                                                      <Button fx:id="btnActualizar" layoutX="50.0" layoutY="466.0" mnemonicParsing="false" onAction="#onActualizar" prefHeight="26.0" prefWidth="106.0" text="Actualizar">
+                                                         <font>
+                                                            <Font name="System Bold" size="15.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Button fx:id="btnEliminar" layoutX="531.0" layoutY="466.0" mnemonicParsing="false" onAction="#onEliminar" prefHeight="26.0" prefWidth="106.0" text="Eliminar">
+                                                         <font>
+                                                            <Font name="System Bold" size="15.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <TextField fx:id="txtBuscar" layoutX="175.0" layoutY="524.0" onAction="#onBuscar" />
+                                                      <Label layoutX="100.0" layoutY="526.0" prefHeight="22.0" prefWidth="75.0" text="BUSCAR" textFill="#fffffff5">
+                                                         <font>
+                                                            <Font name="System Bold" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </AnchorPane>
+                                          </content>
+                                        </Tab>
+                                          <Tab text="RUTINA">
+                                            <content>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Label layoutX="108.0" layoutY="71.0" text="ASIGNACION RUTINAS " textFill="#fcfafa" />
+                                                      <Button fx:id="btnFuerza" layoutX="59.0" layoutY="179.0" mnemonicParsing="false" onAction="#onSeleccionarRutinaFuerza" prefHeight="26.0" prefWidth="136.0" text="ejercicio de fuerza" />
+                                                      <Button fx:id="btnCardio" layoutX="219.0" layoutY="179.0" mnemonicParsing="false" onAction="#onSeleccionarRutinaCardio" prefHeight="26.0" prefWidth="132.0" text="ejercicio cardio" />
+                                                      <Button fx:id="btnFlexibilidad" layoutX="387.0" layoutY="178.0" mnemonicParsing="false" onAction="#onSeleccionarRutinaFlexibilidad" prefHeight="27.0" prefWidth="147.0" text=" ejercicio de  flexibilidad" />
+                                                      <TextArea fx:id="resultadoRurinas" layoutX="71.0" layoutY="276.0" prefHeight="109.0" prefWidth="506.0" />
+                                                      <Text fill="WHITE" layoutX="72.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="seleciona " wrappingWidth="146.61292266845703">
+                                                         <font>
+                                                            <Font size="20.0" />
+                                                         </font>
+                                                      </Text>
+                                                   </children></AnchorPane>
+                                            </content>
+                                          </Tab>
+                                          <Tab text="PAGO MEMBRESIA">
+                                            <content>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <TextField fx:id="numeroTarjeta" layoutX="302.0" layoutY="67.0" />
+                                                      <Label layoutX="201.0" layoutY="24.0" text="PAGO MEMBRESIA" textFill="#fcfafa" />
+                                                      <Label layoutX="115.0" layoutY="70.0" prefHeight="20.0" prefWidth="114.0" text="numero de tarjeta" textFill="#fcfafa" />
+                                                      <Label layoutX="103.0" layoutY="110.0" prefHeight="20.0" prefWidth="114.0" text="fecha de nacimiento" textFill="#fcfafa" />
+                                                      <TextField fx:id="fechaNacimientoPagoM" layoutX="302.0" layoutY="107.0" />
+                                                      <Label layoutX="103.0" layoutY="148.0" prefHeight="20.0" prefWidth="114.0" text="fecha de vencimiento" textFill="#fcfafa" />
+                                                      <TextField fx:id="fechaVencimientoPagoM" layoutX="302.0" layoutY="145.0" />
+                                                      <Label layoutX="45.0" layoutY="185.0" prefHeight="15.0" prefWidth="171.0" text="ingrese su codigo de seguridad" textFill="#fcfafa" />
+                                                      <TextField fx:id="codigoSeguridad" layoutX="302.0" layoutY="181.0" />
+                                                      <Label layoutX="119.0" layoutY="225.0" prefHeight="18.0" prefWidth="82.0" text="valor a pagar" textFill="#fcfafa" />
+                                                      <TextField fx:id="valorPago" layoutX="302.0" layoutY="222.0" />
+                                                      <Button fx:id="btnPagar" layoutX="170.0" layoutY="272.0" mnemonicParsing="false" onAction="#onProcesarPago" prefHeight="5.0" prefWidth="117.0" text="PAGAR">
+                                                         <font>
+                                                            <Font size="15.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <TextArea fx:id="resultadoPagoM" layoutX="81.0" layoutY="329.0" prefHeight="151.0" prefWidth="419.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                            </content>
+                                          </Tab>
+                                          <Tab text="EMPLEADO">
+                                            <content>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Label layoutX="40.0" layoutY="89.0" text="NOMBRE" textFill="WHITE" />
+                                                      <Label layoutX="135.0" layoutY="14.0" prefHeight="35.0" prefWidth="411.0" text="GYM EVOLUTION FINESS STUDIO" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="System Bold" size="24.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Separator layoutX="-7.0" layoutY="57.0" prefHeight="7.0" prefWidth="694.0" />
+                                                      <TextField fx:id="txtnombreEmp" layoutX="104.0" layoutY="85.0" />
+                                                      <Label layoutX="287.0" layoutY="89.0" text="APELLIDO" textFill="WHITE" />
+                                                      <TextField fx:id="txtApellidoEMP" layoutX="411.0" layoutY="85.0" />
+                                                      <Label layoutX="40.0" layoutY="128.0" text="EDAD" textFill="WHITE" />
+                                                      <Label layoutX="291.0" layoutY="128.0" text="CEDULA" textFill="WHITE" />
+                                                      <TextField fx:id="txtEdadEMP" layoutX="104.0" layoutY="124.0" />
+                                                      <TextField fx:id="txtcedulaEMP" layoutX="411.0" layoutY="124.0" />
+                                                      <Label layoutX="41.0" layoutY="168.0" text="CELULAR" textFill="WHITE" />
+                                                      <Label layoutX="293.0" layoutY="168.0" text="CARGO" textFill="WHITE" />
+                                                      <TextField fx:id="txtcelularEMP" layoutX="104.0" layoutY="164.0" />
+                                                      <TableView fx:id="tblEmpleados" layoutX="16.0" layoutY="271.0" onMouseClicked="#seleccionar" prefHeight="122.0" prefWidth="594.0">
+                                                         <columns>
+                                                            <TableColumn fx:id="colNombreEMP" prefWidth="158.4000182747841" text="nombre" />
+                                                            <TableColumn fx:id="colApellidoEMP" prefWidth="111.20001220703125" text="apellido" />
+                                                            <TableColumn fx:id="colEdadEMP" prefWidth="36.800048828125" text="edad" />
+                                                            <TableColumn fx:id="colCedulaEMP" prefWidth="130.39996337890625" text="cedula" />
+                                                            <TableColumn fx:id="colCelularEMP" prefWidth="77.60003662109375" text="celular" />
+                                                            <TableColumn fx:id="colCargoEMP" prefWidth="95.99993896484375" text="CARGO" />
+                                                         </columns>
+                                                      </TableView>
+                                                      <Button fx:id="btnAgregarEmpleado" layoutX="462.0" layoutY="209.0" mnemonicParsing="false" onAction="#onAgregarEmpleado" prefHeight="31.0" prefWidth="197.0" text="AGREGAR EMPLEADO">
+                                                         <font>
+                                                            <Font name="System Bold" size="15.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <TextField fx:id="txtCargoEMP" layoutX="411.0" layoutY="164.0" />
+                                                      <Button fx:id="btnActualizarEMP" layoutX="36.0" layoutY="412.0" mnemonicParsing="false" onAction="#onActualizarEMP" prefHeight="26.0" prefWidth="106.0" text="Actualizar ">
+                                                         <font>
+                                                            <Font name="System Bold" size="15.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Button fx:id="btnEliminarEMP" layoutX="438.0" layoutY="412.0" mnemonicParsing="false" onAction="#onEliminarEMP" prefHeight="26.0" prefWidth="106.0" text="Eliminar">
+                                                         <font>
+                                                            <Font name="System Bold" size="15.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Separator layoutY="255.0" prefHeight="7.0" prefWidth="694.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                            </content>
+                                          </Tab>
+                                          <Tab text="PLAN">
+                                            <content>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Label layoutX="232.0" layoutY="37.0" text="planes " textFill="#cddc23">
+                                                         <font>
+                                                            <Font size="25.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <ComboBox fx:id="comb" layoutX="295.0" layoutY="104.0" onAction="#selec" prefHeight="33.0" prefWidth="198.0" />
+                                                      <Label layoutX="52.0" layoutY="103.0" text="selecciones su plan" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="25.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <TextArea fx:id="reultadoCombobox" layoutX="61.0" layoutY="231.0" opacity="0.12" prefHeight="233.0" prefWidth="518.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                            </content>
+                                          </Tab>
+                                          <Tab text="USER">
+                                            <content>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Label layoutX="42.0" layoutY="84.0" text="NOMBRE DE USUARIO" textFill="#fffffff5">
+                                                         <font>
+                                                            <Font name="System Bold" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <TextField fx:id="txtnombreLogin" layoutX="275.0" layoutY="82.0" />
+                                                      <Label layoutX="42.0" layoutY="128.0" prefHeight="26.0" prefWidth="144.0" text="CONTRASEÑA" textFill="#fffffff5">
+                                                         <font>
+                                                            <Font name="System Bold" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <PasswordField fx:id="txtContrasenia" layoutX="275.0" layoutY="128.0" />
+                                                      <Button layoutX="217.0" layoutY="203.0" mnemonicParsing="false" text="INICIAR SESION" />
+                                                   </children>
+                                                </AnchorPane>
+                                            </content>
+                                          </Tab>
+                                      </tabs>
+                                    </TabPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </TilePane>
+                     </buttons>
+                  </ButtonBar>
                </children>
-            </AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="238.0" prefWidth="669.0" style="-fx-background-color: #48397d;">
-               <children>
-                  <TableView fx:id="tblClientes" layoutX="28.0" layoutY="47.0" onMouseClicked="#seleccionar" prefHeight="137.0" prefWidth="598.0">
-                    <columns>
-                      <TableColumn fx:id="colNombre" prefWidth="158.4000182747841" text="nombre" />
-                      <TableColumn fx:id="colApellido" prefWidth="111.20001220703125" text="apellido" />
-                        <TableColumn fx:id="colEdad" prefWidth="36.800048828125" text="edad" />
-                        <TableColumn fx:id="colCedula" prefWidth="130.39996337890625" text="cedula" />
-                        <TableColumn fx:id="colCelular" prefWidth="77.60003662109375" text="celular" />
-                        <TableColumn fx:id="colTelefono" prefWidth="95.99993896484375" text="telefono" />
-                    </columns>
-                  </TableView>
-                  <Button fx:id="btnEliminar" layoutX="534.0" layoutY="201.0" mnemonicParsing="false" onAction="#onEliminar" prefHeight="26.0" prefWidth="106.0" text="Eliminar">
-                     <font>
-                        <Font name="System Bold" size="15.0" />
-                     </font></Button>
-                  <Button fx:id="btnActualizar" layoutX="28.0" layoutY="201.0" mnemonicParsing="false" onAction="#onActualizar" prefHeight="26.0" prefWidth="106.0" text="Actualizar">
-                     <font>
-                        <Font name="System Bold" size="15.0" />
-                     </font></Button>
-               </children>
-            </AnchorPane>
-        </items>
-      </SplitPane>
+            </Pane>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>
